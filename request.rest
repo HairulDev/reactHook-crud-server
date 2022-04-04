@@ -1,0 +1,27 @@
+GET http://localhost:5000/peoples
+
+###
+GET http://localhost:5000/peoples/45
+
+###
+POST http://localhost:5000/peoples
+Content-Type: application/json
+
+{
+    "firstName": "Orang 2 expressJs",
+    "hobi": "Ngoding",
+    "dob": "2021-12-29"
+}
+
+###
+PATCH http://localhost:5000/peoples/45
+Content-Type: application/json
+
+{
+    "firstName": "Orang 1 expressJs",
+    "hobi": "Traveling",
+    "dob": "2021-12-29"
+}
+
+###
+DELETE http://localhost:5000/peoples/46
